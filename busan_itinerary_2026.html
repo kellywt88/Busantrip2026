@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>釜山高CP值行程 5/20–24, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --sea: #0f4c75;
+    --wave: #1b6ca8;
+    --coral: #e05a4b;
+    --gold: #c9954a;
+    --sand: #f5ede0;
+    --pale: #eef4f9;
+    --mist: #d0e4f0;
+    --white: #ffffff;
+    --border: rgba(15,76,117,0.15);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--ink);
+    color: var(--ink);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+  }
+
+  /* ── HEADER ── */
+  .hero {
+    background: linear-gradient(160deg, #0a2a4a 0%, #0f4c75 45%, #1b6ca8 80%, #2e86c1 100%);
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 80px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80'%3E%3Cpath fill='%23f5ede0' fill-opacity='1' d='M0,40L48,45C96,50,192,60,288,58C384,56,480,42,576,38C672,34,768,38,864,44C960,50,1056,58,1152,56C1248,54,1344,42,1392,36L1440,30L1440,80L0,80Z'/%3E%3C/svg%3E") no-repeat bottom/cover;
+  }
+  .hero-badge {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.35);
+    color: rgba(255,255,255,0.8);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 54px;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  .hero h1 em { color: #f5c77a; font-style: italic; }
+  .hero-sub {
+    color: rgba(255,255,255,0.75);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin-bottom: 28px;
+  }
+  .hero-pills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .pill {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: white;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+  }
+  .pill.hot { background: rgba(224,90,75,0.35); border-color: rgba(224,90,75,0.5); }
+
+  /* ── MAIN CONTAINER ── */
+  .container {
+    background: var(--sand);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 0 60px;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    padding: 44px 40px 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child { border-bottom: none; }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .section-icon {
+    width: 36px; height: 36px;
+    background: var(--sea);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: var(--sea);
+  }
+
+  /* ── NOTICE BOX ── */
+  .notice {
+    background: linear-gradient(135deg, #fff8f0, #fff3e8);
+    border-left: 4px solid var(--coral);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    color: #4a2a1a;
+  }
+  .notice strong { color: var(--coral); }
+
+  /* ── FLIGHT INFO ── */
+  .flight-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .flight-card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px 20px;
+    border: 1px solid var(--mist);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .flight-icon { font-size: 28px; }
+  .flight-route { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--wave); margin-bottom: 4px; }
+  .flight-time { font-size: 20px; font-weight: 700; color: var(--ink); }
+  .flight-detail { font-size: 12px; color: #888; margin-top: 2px; }
+
+  /* ── DAY CARDS ── */
+  .day-block {
+    margin-bottom: 28px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+  }
+  .day-header {
+    background: linear-gradient(135deg, var(--sea), var(--wave));
+    color: white;
+    padding: 14px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .day-num { font-family: 'DM Serif Display', serif; font-size: 22px; }
+  .day-date { font-size: 12px; letter-spacing: 1px; opacity: 0.8; }
+  .day-theme {
+    background: rgba(255,255,255,0.15);
+    border-radius: 50px;
+    padding: 4px 12px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .day-table-wrap { background: white; overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead tr {
+    background: var(--pale);
+    border-bottom: 2px solid var(--mist);
+  }
+  th {
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--sea);
+    white-space: nowrap;
+  }
+  td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #f0f4f8;
+    vertical-align: top;
+    line-height: 1.6;
+    color: #2c3e50;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafcff; }
+  .time-col { white-space: nowrap; font-weight: 600; color: var(--wave); min-width: 85px; }
+  .activity-name { font-weight: 600; color: var(--ink); display: block; margin-bottom: 2px; }
+  .activity-sub { font-size: 12px; color: #666; }
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-right: 4px;
+    margin-top: 3px;
+  }
+  .tag-must { background: #fde8e6; color: #c0392b; }
+  .tag-food { background: #e8f5e9; color: #2e7d32; }
+  .tag-free { background: #e8f0fe; color: #1565c0; }
+  .tag-pass { background: #fff3cd; color: #856404; }
+  .tag-book { background: #fce4ec; color: #ad1457; }
+  .tag-tip { background: #ede7f6; color: #4527a0; }
+  .cost-badge {
+    display: inline-block;
+    background: var(--pale);
+    border: 1px solid var(--mist);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--sea);
+    white-space: nowrap;
+  }
+  .note-cell {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.65;
+  }
+  .note-cell ul { padding-left: 14px; margin: 0; }
+  .note-cell li { margin-bottom: 2px; }
+
+  /* ── SUMMARY BOX ── */
+  .budget-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .budget-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid var(--mist);
+  }
+  .budget-card .label { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #888; margin-bottom: 4px; }
+  .budget-card .amount { font-family: 'DM Serif Display', serif; font-size: 26px; color: var(--sea); }
+  .budget-card .unit { font-size: 11px; color: #999; }
+  .budget-card.total { background: linear-gradient(135deg, var(--sea), var(--wave)); border-color: transparent; }
+  .budget-card.total .label, .budget-card.total .unit { color: rgba(255,255,255,0.7); }
+  .budget-card.total .amount { color: #f5c77a; }
+
+  /* ── HOTEL CARDS ── */
+  .hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .hotel-card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px 20px;
+    border: 1px solid var(--mist);
+  }
+  .hotel-period {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--coral);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .hotel-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--sea);
+    margin-bottom: 4px;
+  }
+  .hotel-area {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  .hotel-pros { font-size: 12.5px; line-height: 1.7; color: #444; }
+  .hotel-pros span { display: block; }
+  .hotel-pros span::before { content: '✓ '; color: var(--wave); font-weight: 700; }
+  .hotel-price { margin-top: 10px; font-size: 12px; color: #888; }
+  .hotel-price strong { color: var(--gold); font-size: 14px; }
+
+  /* ── FOOD CARDS ── */
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .food-card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid var(--mist);
+  }
+  .food-emoji { font-size: 30px; margin-bottom: 8px; display: block; }
+  .food-name { font-size: 15px; font-weight: 700; color: var(--sea); margin-bottom: 2px; }
+  .food-kr { font-size: 11px; color: #aaa; margin-bottom: 6px; }
+  .food-desc { font-size: 12.5px; color: #555; line-height: 1.65; }
+  .food-price { margin-top: 8px; font-size: 12px; color: var(--gold); font-weight: 600; }
+  .food-loc { font-size: 11px; color: #999; margin-top: 3px; }
+
+  /* ── TRANSPORT ── */
+  .trans-table { width: 100%; border-collapse: collapse; }
+  .trans-table th { background: var(--pale); padding: 10px 14px; text-align:left; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--sea); font-weight:700; }
+  .trans-table td { padding: 10px 14px; border-bottom: 1px solid #edf2f7; font-size: 13px; vertical-align:top; }
+  .verdict { display: inline-block; padding: 3px 10px; border-radius: 50px; font-size: 11px; font-weight: 700; }
+  .verdict.yes { background: #e8f5e9; color: #2e7d32; }
+  .verdict.no { background: #fce4ec; color: #c62828; }
+
+  /* ── TIPS ── */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .tip-item {
+    background: white;
+    border-radius: 12px;
+    padding: 16px 18px;
+    border-left: 4px solid var(--wave);
+    font-size: 13px;
+    line-height: 1.7;
+    color: #333;
+  }
+  .tip-item .tip-title { font-weight: 700; color: var(--sea); margin-bottom: 5px; font-size: 14px; }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 700px) {
+    .hero h1 { font-size: 34px; }
+    .section { padding: 30px 20px 24px; }
+    .budget-grid, .food-grid { grid-template-columns: 1fr 1fr; }
+    .hotel-grid, .tips-grid { grid-template-columns: 1fr; }
+    .flight-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">2026 釜山私房攻略</div>
+  <h1>부산 여행<br><em>高CP值五日遊</em></h1>
+  <p class="hero-sub">5月20日 — 24日 &nbsp;·&nbsp; 2人女子旅 &nbsp;·&nbsp; 預算 NT$25,000/人</p>
+  <div class="hero-pills">
+    <span class="pill">🛕 海東龍宮寺</span>
+    <span class="pill">🚞 膠囊列車</span>
+    <span class="pill hot">🎆 Yacht Holic</span>
+    <span class="pill">🎨 甘川洞韓服</span>
+    <span class="pill">💆‍♀️ 醫美</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- 航班 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">✈️</div>
+      <h2 class="section-title">航班資訊</h2>
+    </div>
+    <div class="flight-row">
+      <div class="flight-card">
+        <div class="flight-icon">🛫</div>
+        <div>
+          <div class="flight-route">高雄 → 釜山</div>
+          <div class="flight-time">14:15 → 17:55</div>
+          <div class="flight-detail">5月20日（週三）· 入境時間約 18:30 · 市區約 19:30</div>
+        </div>
+      </div>
+      <div class="flight-card">
+        <div class="flight-icon">🛬</div>
+        <div>
+          <div class="flight-route">釜山 → 高雄</div>
+          <div class="flight-time">14:15 → 16:00</div>
+          <div class="flight-detail">5月24日（週日）· 建議 12:00 前抵達金海機場</div>
+        </div>
+      </div>
+    </div>
+    <div class="notice">
+      ⚠️ <strong>機場交通：</strong>金海機場 → 市區，搭乘輕軌至沙上站，轉地鐵2號線，全程約50-60分鐘，費用約4,500韓元（約NT$100）。<br>
+      5/24 回程：建議搭配醫美時間，<strong>最晚11:30離開診所</strong>出發機場，勿拖延。
+    </div>
+  </div>
+
+  <!-- Day 1 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🌊</div>
+      <h2 class="section-title">每日行程表</h2>
+    </div>
+
+    <div class="day-block">
+      <div class="day-header">
+        <div>
+          <div class="day-num">Day 1 &nbsp;·&nbsp; 5/20（週三）</div>
+          <div class="day-date">抵達 × 安頓 × 初探西面夜市</div>
+        </div>
+        <div class="day-theme">住宿：南浦洞</div>
+      </div>
+      <div class="day-table-wrap">
+        <table>
+          <thead><tr>
+            <th>時間</th><th>行程</th><th>預估花費/人</th><th>提醒事項</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td class="time-col">17:55</td>
+              <td>
+                <span class="activity-name">抵達金海國際機場</span>
+                <span class="activity-sub">入關 + 提行李 + 購買T-money交通卡（機場7-11）</span>
+              </td>
+              <td><span class="cost-badge">T-money ₩5,000 押金</span></td>
+              <td class="note-cell">
+                <ul>
+                  <li>機場輕軌→沙上站→地鐵2號線</li>
+                  <li>可同時購買WOWPASS（含T-money功能+換匯）</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="time-col">19:30</td>
+              <td>
+                <span class="activity-name">入住南浦洞飯店</span>
+                <span class="activity-sub">放行李、稍作休息</span>
+                <span class="tag tag-tip">住宿策略</span>
+              </td>
+              <td><span class="cost-badge">含住宿費</span></td>
+              <td class="note-cell">Check-in，若來不及可寄放行李先去吃飯</td>
+            </tr>
+            <tr>
+              <td class="time-col">20:00</td>
+              <td>
+                <span class="activity-name">晚餐：雙胞胎豬肉湯飯</span>
+                <span class="activity-sub">釜山在地經典，24小時營業完全不怕晚到</span>
+                <span class="tag tag-food">在地必吃</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$180</span></td>
+              <td class="note-cell">地址：大淵站附近（若住南浦洞搭地鐵約15分），可先搜尋「쌍둥이 국밥」</td>
+            </tr>
+            <tr>
+              <td class="time-col">21:30</td>
+              <td>
+                <span class="activity-name">南浦洞 BIFF 廣場夜逛</span>
+                <span class="activity-sub">吃路邊黑糖餅、魚板串、逛光復路</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$100</span></td>
+              <td class="note-cell">Olive Young / 韓國美妝採購好時機</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-block">
+      <div class="day-header">
+        <div>
+          <div class="day-num">Day 2 &nbsp;·&nbsp; 5/21（週四）</div>
+          <div class="day-date">甘川洞文化村 × 松島海上纜車</div>
+        </div>
+        <div class="day-theme">住宿：南浦洞 → 廣安里（換房）</div>
+      </div>
+      <div class="day-table-wrap">
+        <table>
+          <thead><tr>
+            <th>時間</th><th>行程</th><th>預估花費/人</th><th>提醒事項</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td class="time-col">08:30</td>
+              <td>
+                <span class="activity-name">早餐：古來思魚糕 南浦洞</span>
+                <span class="activity-sub">釜山最名牌魚糕品牌，10種口味 / 現做熱湯</span>
+                <span class="tag tag-food">伴手禮</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$80</span></td>
+              <td class="note-cell">先吃一輪，回程再買伴手禮冷凍宅配</td>
+            </tr>
+            <tr>
+              <td class="time-col">09:30</td>
+              <td>
+                <span class="activity-name">🎨 甘川洞文化村</span>
+                <span class="activity-sub">含韓服體驗1小時（哲秀與英熙韓服店）+ 小王子打卡 + 翻頁書</span>
+                <span class="tag tag-must">必訪</span>
+                <span class="tag tag-pass">Pass免費</span>
+              </td>
+              <td><span class="cost-badge">Pass免費（見交通Pass說明）</span></td>
+              <td class="note-cell">
+                <ul>
+                  <li>札嘎其站搭1-1/2-2號小公車，「甘川小學站」下車</li>
+                  <li>無需預約，現場出示Pass即可換裝</li>
+                  <li>建議先穿韓服再逛村，一小時時限要抓好</li>
+                  <li>入口處旅遊中心購買地圖（₩2,000）集印章</li>
+                  <li>☕ 必去：Avant Garde咖啡廳，整片露台俯瞰全村</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="time-col">12:30</td>
+              <td>
+                <span class="activity-name">午餐：甘川洞村內小吃</span>
+                <span class="activity-sub">村內年糕、拌飯小館，或回南浦洞吃</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$200</span></td>
+              <td class="note-cell">記得行前check好想吃的店是否週四休息</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:00</td>
+              <td>
+                <span class="activity-name">🚡 松島海上纜車（釜山Air Cruise）</span>
+                <span class="activity-sub">全長1.6km、高達86m，水晶透明車廂俯瞰海景</span>
+                <span class="tag tag-pass">Pass免費</span>
+              </td>
+              <td><span class="cost-badge">Pass免費</span></td>
+              <td class="note-cell">
+                <ul>
+                  <li>從甘川洞搭計程車約15分鐘（₩8,000）</li>
+                  <li>建議事先在Klook/KKday購票避免排隊</li>
+                  <li>可搭配松島龍宮雲橋空中步道（腳下是海！）</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="time-col">16:00</td>
+              <td>
+                <span class="activity-name">松島海灘散步＋松島Sky Park</span>
+                <span class="activity-sub">時空膠囊體驗、许願龍、天空公園</span>
+              </td>
+              <td><span class="cost-badge">免費（膠囊₩8,800選配）</span></td>
+              <td class="note-cell">拍夕陽最佳！4-5點是黃金光線</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:30</td>
+              <td>
+                <span class="activity-name">換飯店：南浦洞 → 廣安里</span>
+                <span class="activity-sub">行李寄放/計程車移動，約20分鐘</span>
+              </td>
+              <td><span class="cost-badge">計程車 ≈ NT$350</span></td>
+              <td class="note-cell">廣安里飯店可先電話聯絡提早寄放行李</td>
+            </tr>
+            <tr>
+              <td class="time-col">19:30</td>
+              <td>
+                <span class="activity-name">晚餐：廣安里 Gatten壽司（廣安直營店）</span>
+                <span class="activity-sub">平價迴轉壽司，NT$35起，味噌湯免費喝，廣安里海景</span>
+                <span class="tag tag-food">性價比王</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$400</span></td>
+              <td class="note-cell">廣安里海灘附近，飯後漫步沙灘賞廣安大橋夜景</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day-block">
+      <div class="day-header">
+        <div>
+          <div class="day-num">Day 3 &nbsp;·&nbsp; 5/22（週五）</div>
+          <div class="day-date">海東龍宮寺 × 天空膠囊列車 × 海雲台</div>
+        </div>
+        <div class="day-theme">住宿：廣安里</div>
+      </div>
+      <div class="day-table-wrap">
+        <table>
+          <thead><tr>
+            <th>時間</th><th>行程</th><th>預估花費/人</th><th>提醒事項</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td class="time-col">09:00</td>
+              <td>
+                <span class="activity-name">早餐：廣安里海雲台一帶便利商店/咖啡廳</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$100</span></td>
+              <td class="note-cell">輕食即可，今天行程豐富</td>
+            </tr>
+            <tr>
+              <td class="time-col">09:30</td>
+              <td>
+                <span class="activity-name">🛕 海東龍宮寺</span>
+                <span class="activity-sub">韓國最美海景寺廟，懸崖峭壁上的千年古剎，12生肖、108石階</span>
+                <span class="tag tag-must">必訪</span>
+                <span class="tag tag-free">免費入場</span>
+              </td>
+              <td><span class="cost-badge">免費（交通另計）</span></td>
+              <td class="note-cell">
+                <ul>
+                  <li>從廣安站→海雲台站（2號線）→搭181號公車，至「龍宮寺站」下車</li>
+                  <li>全程約1小時，建議早去人少、光線好</li>
+                  <li>寺廟有海鮮刀切麵、鮑魚粥攤位，可吃個點心</li>
+                  <li>🔴 注意：穿韓服時記得已還衣服，今天正常著裝</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="time-col">11:30</td>
+              <td>
+                <span class="activity-name">回程 → 尾浦站方向</span>
+                <span class="activity-sub">搭181公車回海雲台站，往尾浦站步行/搭車</span>
+              </td>
+              <td><span class="cost-badge">公車 ≈ NT$40</span></td>
+              <td class="note-cell">海東龍宮寺→海雲台站→再走15分鐘至尾浦站</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00</td>
+              <td>
+                <span class="activity-name">午餐：爐紅餃子刀切麵</span>
+                <span class="activity-sub">海雲台市場內60年老店，蛤蜊刀切麵₩9,000，蝦仁蒸餃必點</span>
+                <span class="tag tag-food">在地老店</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$250</span></td>
+              <td class="note-cell">在地人超推，不辣、份量足，完全不像觀光客生意</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:30</td>
+              <td>
+                <span class="activity-name">🚞 天空膠囊列車（尾浦→青沙浦）</span>
+                <span class="activity-sub">7–10m高軌道無遮蔽海景，全程30分鐘，回程搭海岸列車</span>
+                <span class="tag tag-must">必玩</span>
+                <span class="tag tag-book">🔴需預約</span>
+              </td>
+              <td><span class="cost-badge">套票2人 ₩59,000（≈NT$1,300，每人≈NT$650）</span></td>
+              <td class="note-cell">
+                <ul>
+                  <li><strong>🔴最重要！</strong>預約官網：英文介面才有膠囊列車（https://www.blueline.kr/en）</li>
+                  <li>出發前1個月(4/21)起開放訂票！建議出發前2週以上預約</li>
+                  <li>2人套票(膠囊去程+海岸列車回程)=₩59,000</li>
+                  <li>尾浦站出發→視野靠海，拍照最漂亮</li>
+                  <li>時段間隔要留30分鐘以上的緩衝</li>
+                  <li>無空調，5月氣溫約22–26°C，可打開窗戶吹海風</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="time-col">16:00</td>
+              <td>
+                <span class="activity-name">青沙浦站周邊散步</span>
+                <span class="activity-sub">「韓版灌籃高手平交道」打卡、青沙浦踏石觀景台（U型玻璃步道）</span>
+              </td>
+              <td><span class="cost-badge">免費</span></td>
+              <td class="note-cell">踏石觀景台站在玻璃地板往下看超刺激，記得安全注意</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:30</td>
+              <td>
+                <span class="activity-name">☕ 海雲台海景咖啡廳</span>
+                <span class="activity-sub">推薦：Busan X The Sky周邊海景咖啡廳，或 Raw & Sweet Haeundae</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$200</span></td>
+              <td class="note-cell">X the Sky觀景台可用Pass免費（建議開Pass後使用）</td>
+            </tr>
+            <tr>
+              <td class="time-col">19:30</td>
+              <td>
+                <span class="activity-name">晚餐：味贊王鹽烤肉（廣安里店或海雲台店）</span>
+                <span class="activity-sub">全程專人代烤，豬五花₩14,000/130g，每人至少點2–3份</span>
+                <span class="tag tag-food">釜山必吃</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$700</span></td>
+              <td class="note-cell">生意非常好，建議抵達前就去拿號碼牌排隊</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="day-block">
+      <div class="day-header">
+        <div>
+          <div class="day-num">Day 4 &nbsp;·&nbsp; 5/23（週六）</div>
+          <div class="day-date">廣安里散策 × 🎆 Yacht Holic 夜間煙火遊艇</div>
+        </div>
+        <div class="day-theme">住宿：廣安里（最後一晚）</div>
+      </div>
+      <div class="day-table-wrap">
+        <table>
+          <thead><tr>
+            <th>時間</th><th>行程</th><th>預估花費/人</th><th>提醒事項</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td class="time-col">09:30</td>
+              <td>
+                <span class="activity-name">早午餐：海雲台五福豬肉湯飯</span>
+                <span class="activity-sub">釜山代表性早餐，乳白色濃郁豬骨湯，在地人排隊名店</span>
+                <span class="tag tag-food">在地必吃</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$200</span></td>
+              <td class="note-cell">釜山豬肉湯飯是在地靈魂美食，不來不行！</td>
+            </tr>
+            <tr>
+              <td class="time-col">11:00</td>
+              <td>
+                <span class="activity-name">Busan X The Sky 觀景台</span>
+                <span class="activity-sub">海雲台海灘正上方，100層高俯瞰廣安大橋、整個釜山海岸線</span>
+                <span class="tag tag-pass">Pass免費</span>
+              </td>
+              <td><span class="cost-badge">Pass免費（原價約₩27,000）</span></td>
+              <td class="note-cell">建議在這邊開始啟動Visit Busan Pass 48小時，橫跨5/23-24使用</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00</td>
+              <td>
+                <span class="activity-name">廣安里海灘漫步＋購物</span>
+                <span class="activity-sub">Millac The Market、廣安里M街、海邊咖啡廳</span>
+              </td>
+              <td><span class="cost-badge">依個人</span></td>
+              <td class="note-cell">下午最後購買伴手禮的好時機（Olive Young、超市零食）</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:30</td>
+              <td>
+                <span class="activity-name">☕ 廣安里海景咖啡廳下午茶</span>
+                <span class="activity-sub">面對廣安大橋的網美咖啡廳放鬆養精蓄銳</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$200</span></td>
+              <td class="note-cell">今晚是重頭戲，下午先休息</td>
+            </tr>
+            <tr>
+              <td class="time-col">18:30</td>
+              <td>
+                <span class="activity-name">前往遊艇集合地點</span>
+                <span class="activity-sub">廣安里海洋休閒運動中心（Gwangalli Ocean Leports Center）</span>
+              </td>
+              <td><span class="cost-badge">步行/計程車</span></td>
+              <td class="note-cell">
+                <ul>
+                  <li>最近地鐵站：金蓮山站3號出口，步行約10分鐘</li>
+                  <li><strong>2026/2/17起集合地點已遷移至廣安里，注意勿走到舊地點！</strong></li>
+                  <li>集合時間在出發前20分鐘，千萬不要遲到</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="time-col">19:30</td>
+              <td>
+                <span class="activity-name">🎆 Yacht Holic 豪華遊艇體驗</span>
+                <span class="activity-sub">50分鐘海上之旅，廣安大橋夜景 + 煙火秀 + <strong>週六19:30場限定無人機表演</strong></span>
+                <span class="tag tag-must">今日亮點</span>
+                <span class="tag tag-book">需事先預約</span>
+              </td>
+              <td><span class="cost-badge">夜間 ≈ NT$810/人</span></td>
+              <td class="note-cell">
+                <ul>
+                  <li>透過 Instagram、KKday 或 Klook 預訂</li>
+                  <li><strong>🌟5/23是週六！選19:30場可看無人機表演！</strong></li>
+                  <li>船上提供免費啤酒、芒果汁、小零食</li>
+                  <li>穿救生衣、脫鞋換拖鞋才能上船</li>
+                  <li>容易暈船者請提前吃暈船藥</li>
+                  <li>2026/1/1起：Visit Busan Pass已無法免費搭乘此遊艇，需自費購票</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="time-col">21:30</td>
+              <td>
+                <span class="activity-name">宵夜：廣安里布帳馬車一條街</span>
+                <span class="activity-sub">烤腸、辣炒年糕、炸物，搭配一瓶燒酒，完美收尾</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$300</span></td>
+              <td class="note-cell">廣安里沙灘旁的布帳馬車夜晚超有氣氛</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-block">
+      <div class="day-header">
+        <div>
+          <div class="day-num">Day 5 &nbsp;·&nbsp; 5/24（週日）</div>
+          <div class="day-date">💆‍♀️ 醫美 × 機場 × 返台</div>
+        </div>
+        <div class="day-theme">住宿：退房日</div>
+      </div>
+      <div class="day-table-wrap">
+        <table>
+          <thead><tr>
+            <th>時間</th><th>行程</th><th>預估花費/人</th><th>提醒事項</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td class="time-col">07:30</td>
+              <td>
+                <span class="activity-name">退房 + 行李寄放/計程車</span>
+                <span class="activity-sub">大件行李先寄放，帶輕便小包去醫美</span>
+              </td>
+              <td><span class="cost-badge">飯店寄放 / 計程車</span></td>
+              <td class="note-cell">建議前一天先跟飯店確認早退房及行李保管服務</td>
+            </tr>
+            <tr>
+              <td class="time-col">08:30</td>
+              <td>
+                <span class="activity-name">早餐：便利商店 / 簡單吃</span>
+              </td>
+              <td><span class="cost-badge">≈ NT$100</span></td>
+              <td class="note-cell">醫美前不要吃太撐，視項目而定</td>
+            </tr>
+            <tr>
+              <td class="time-col">09:00–11:00</td>
+              <td>
+                <span class="activity-name">💆‍♀️ 醫美診所</span>
+                <span class="activity-sub">建議預約西面或南浦洞附近診所（交通便利）</span>
+                <span class="tag tag-book">出發前預約</span>
+              </td>
+              <td><span class="cost-badge">依項目另計</span></td>
+              <td class="note-cell">
+                <ul>
+                  <li><strong>在台灣出發前就要預約好</strong>（許多診所有中文服務）</li>
+                  <li>熱門診所：西面 DA Clinic、Oracle 皮膚科等</li>
+                  <li>做完若臉部紅腫，備好口罩遮擋</li>
+                  <li><strong>🔴時間控制：11:00前必須離開診所</strong></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="time-col">11:15</td>
+              <td>
+                <span class="activity-name">取行李 → 金海機場</span>
+                <span class="activity-sub">搭地鐵2號線→機場輕軌（沙上站轉乘），全程約50分鐘</span>
+              </td>
+              <td><span class="cost-badge">地鐵 ≈ NT$100</span></td>
+              <td class="note-cell">若體力不好或行李多，直接搭計程車到機場更穩（約₩35,000 ≈ NT$800）</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:30</td>
+              <td>
+                <span class="activity-name">抵達金海機場 Check-in</span>
+                <span class="activity-sub">辦理托運 → 退稅 → 過安檢 → 免稅店</span>
+              </td>
+              <td><span class="cost-badge">剩餘韓元花光！</span></td>
+              <td class="note-cell">記得退稅！超商買的冷凍魚糕放托運，不可手提帶上機</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:15</td>
+              <td>
+                <span class="activity-name">✈️ 班機起飛 → 16:00 抵達高雄</span>
+              </td>
+              <td>—</td>
+              <td class="note-cell">安心飛！</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 住宿 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🏨</div>
+      <h2 class="section-title">住宿策略（2段式）</h2>
+    </div>
+    <div class="notice">
+      📍 <strong>策略：</strong>前2晚住<strong>南浦洞</strong>（靠近甘川洞、松島），後2晚換住<strong>廣安里</strong>（靠近遊艇、海雲台）。總搬家1次，效益最大化。
+    </div>
+    <div class="hotel-grid">
+      <div class="hotel-card">
+        <div class="hotel-period">5/20–22 · 2晚 · 南浦洞</div>
+        <div class="hotel-name">釜山亞雲樹飯店</div>
+        <div class="hotel-area">Aventree Hotel Busan · 光復路步行3分鐘</div>
+        <div class="hotel-pros">
+          <span>地鐵札嘎其站步行2分鐘</span>
+          <span>甘川洞公車站超近</span>
+          <span>松島、影島交通方便</span>
+          <span>機場輕便快速連結</span>
+          <span>Olive Young/超商在樓下</span>
+        </div>
+        <div class="hotel-price">雙人房約 <strong>NT$2,500–3,500/晚</strong>（每人約NT$1,250–1,750）</div>
+      </div>
+      <div class="hotel-card">
+        <div class="hotel-period">5/22–24 · 2晚 · 廣安里</div>
+        <div class="hotel-name">廣安里海景飯店/精品民宿</div>
+        <div class="hotel-area">광안리 附近 · 金蓮山站步行10分鐘</div>
+        <div class="hotel-pros">
+          <span>廣安大橋海景房（旺季要搶！）</span>
+          <span>Yacht Holic集合點步行可達</span>
+          <span>離海雲台膠囊列車20分鐘</span>
+          <span>周邊夜市、咖啡廳、布帳馬車豐富</span>
+          <span>廣安里沙灘步行5分鐘</span>
+        </div>
+        <div class="hotel-price">雙人房約 <strong>NT$3,000–4,500/晚</strong>（每人約NT$1,500–2,250）</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 美食 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🍽️</div>
+      <h2 class="section-title">在地高評價平價美食</h2>
+    </div>
+    <div class="food-grid">
+      <div class="food-card">
+        <span class="food-emoji">🍲</span>
+        <div class="food-name">雙胞胎豬肉湯飯</div>
+        <div class="food-kr">쌍둥이국밥 · 大淵站</div>
+        <div class="food-desc">釜山豬肉湯飯界代表名店。乳白色濃郁豬骨湯與白飯分開上，自由調味。在地人天天排隊、24小時營業，深夜到達也可以吃到熱騰騰的一碗。</div>
+        <div class="food-price">₩9,000–12,000 / 人 ≈ NT$200</div>
+        <div class="food-loc">📍大淵站 · 1號線</div>
+      </div>
+      <div class="food-card">
+        <span class="food-emoji">🥟</span>
+        <div class="food-name">爐紅餃子刀切麵</div>
+        <div class="food-kr">노홍만두 · 海雲台市場</div>
+        <div class="food-desc">60年老店，在地人每天排隊。蛤蜊刀切麵料多到撈不完，蝦仁蒸餃包整尾蝦超紮實。不辣、份量大，完全是在地靈魂美食，不是為觀光客設計的。</div>
+        <div class="food-price">₩9,000–11,000 / 人 ≈ NT$230</div>
+        <div class="food-loc">📍海雲台市場內 · 203站</div>
+      </div>
+      <div class="food-card">
+        <span class="food-emoji">🥩</span>
+        <div class="food-name">味贊王鹽烤肉</div>
+        <div class="food-kr">맛찬들왕소금구이 · 西面</div>
+        <div class="food-desc">全程專人桌邊烤肉，不用自己動手！配水芹菜一起烤口感特別，小菜每道都好吃。帥氣弟弟烤肉服務一級棒，是台灣旅客口耳相傳的必吃烤肉店。</div>
+        <div class="food-price">₩14,000/130g · 每人2–3份 ≈ NT$600–900</div>
+        <div class="food-loc">📍西面站 · 1/2號線交會</div>
+      </div>
+    </div>
+    <br>
+    <div style="background:white;border-radius:14px;padding:20px;border:1px solid var(--mist);">
+      <div style="font-weight:700;color:var(--sea);margin-bottom:12px;font-size:15px;">🏔️ 有美景的咖啡廳推薦</div>
+      <table style="width:100%;font-size:13px;">
+        <thead><tr style="background:var(--pale);">
+          <th style="padding:8px 12px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--sea);">咖啡廳</th>
+          <th style="padding:8px 12px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--sea);">特色</th>
+          <th style="padding:8px 12px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--sea);">位置</th>
+          <th style="padding:8px 12px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--sea);">消費</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px 12px;font-weight:600;color:var(--ink);border-bottom:1px solid #f0f4f8;">Avant Garde Café<br><span style="font-size:11px;color:#888;font-weight:400;">카페 아방가르드</span></td>
+            <td style="padding:10px 12px;border-bottom:1px solid #f0f4f8;">整片露台可俯瞰甘川洞彩色山城全景，IG熱門打卡點</td>
+            <td style="padding:10px 12px;border-bottom:1px solid #f0f4f8;">甘川洞文化村入口附近</td>
+            <td style="padding:10px 12px;border-bottom:1px solid #f0f4f8;">冰美式 ₩5,000 ≈ NT$110</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px;font-weight:600;color:var(--ink);border-bottom:1px solid #f0f4f8;">Raw & Sweet Haeundae</td>
+            <td style="padding:10px 12px;border-bottom:1px solid #f0f4f8;">海雲台海灘正前方的特色甜點咖啡廳，下午茶+海景絕配</td>
+            <td style="padding:10px 12px;border-bottom:1px solid #f0f4f8;">海雲台海灘旁 · 海理團路</td>
+            <td style="padding:10px 12px;border-bottom:1px solid #f0f4f8;">飲品 ₩6,000–8,000</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px;font-weight:600;color:var(--ink);">廣安里海景咖啡廳</td>
+            <td style="padding:10px 12px;">廣安大橋正對面，白天看橋夜晚看燈，浪漫滿點</td>
+            <td style="padding:10px 12px;">廣安里 M街周邊多家</td>
+            <td style="padding:10px 12px;">飲品 ₩5,500–7,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 交通 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">🚇</div>
+      <h2 class="section-title">交通票券分析</h2>
+    </div>
+    <div class="notice">
+      💳 <strong>結論：</strong>購買 <strong>T-money 交通卡（或 WOWPASS）</strong>作為基本交通工具，再搭配 <strong>Visit Busan Pass 48小時</strong>（5/23 下午啟用，橫跨三天使用）最划算。<strong>不需要購買地鐵周遊券。</strong>
+    </div>
+    <table class="trans-table">
+      <thead><tr>
+        <th>項目</th><th>是否建議購買</th><th>費用（每人）</th><th>說明</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:600;">T-money / WOWPASS 交通卡</td>
+          <td><span class="verdict yes">✅ 必買</span></td>
+          <td>押金 ₩5,000（可退）</td>
+          <td>搭地鐵、公車、計程車均可使用，機場即可購買。每次地鐵 ₩1,350–1,800，一天花費不超過 ₩10,000（≈NT$220）</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">Visit Busan Pass 48小時</td>
+          <td><span class="verdict yes">✅ 推薦購買</span></td>
+          <td>約 NT$1,800</td>
+          <td>5/23 下午開卡使用至5/24（可免費：松島纜車NT$500 + 甘川洞韓服NT$271 + X the Sky NT$490 + 海岸列車NT$125 = NT$1,386，加翻頁書、Spa Land更划算）<br>⚠️ 膠囊列車、Yacht Holic均<strong>不含</strong>在Pass內，需另購</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">天空膠囊列車（套票）</td>
+          <td><span class="verdict yes">✅ 另購</span></td>
+          <td>2人共 ₩59,000 ≈ NT$650/人</td>
+          <td>不含在Pass內，至 blueline.kr 英文官網購買，建議出發前2–4週預約</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">地鐵一日票/周遊券</td>
+          <td><span class="verdict no">❌ 不建議</span></td>
+          <td>—</td>
+          <td>釜山地鐵票價低廉，加上行程常搭公車或計程車，日票無法回本</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">釜山城市觀光巴士（BUTI）</td>
+          <td><span class="verdict no">❌ 不建議</span></td>
+          <td>—</td>
+          <td>行程點分散，地鐵+計程車更彈性，不需要固定班次</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">計程車（Kakao Taxi）</td>
+          <td><span class="verdict yes">✅ 搭配使用</span></td>
+          <td>按里程計費</td>
+          <td>如：海東龍宮寺→尾浦站 約 ₩15,000（≈NT$330），景點間交通靈活又省時。建議下載 Kakao Map App，叫車方便</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 預算 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">💰</div>
+      <h2 class="section-title">預算總覽（每人）</h2>
+    </div>
+    <div class="budget-grid">
+      <div class="budget-card">
+        <div class="label">住宿（4晚）</div>
+        <div class="amount">5,000</div>
+        <div class="unit">NT$ 每人均攤（南浦洞2晚+廣安里2晚）</div>
+      </div>
+      <div class="budget-card">
+        <div class="label">景點票券</div>
+        <div class="amount">3,250</div>
+        <div class="unit">NT$（Pass+膠囊列車+Yacht Holic夜間）</div>
+      </div>
+      <div class="budget-card">
+        <div class="label">餐飲（4.5天）</div>
+        <div class="amount">3,500</div>
+        <div class="unit">NT$（每日約NT$700–800）</div>
+      </div>
+      <div class="budget-card">
+        <div class="label">市區交通</div>
+        <div class="amount">1,200</div>
+        <div class="unit">NT$（地鐵+公車+計程車）</div>
+      </div>
+      <div class="budget-card">
+        <div class="label">購物/伴手禮</div>
+        <div class="amount">3,000–6,000</div>
+        <div class="unit">NT$（依個人，Olive Young很燒錢！）</div>
+      </div>
+      <div class="budget-card total">
+        <div class="label">合計（不含醫美）</div>
+        <div class="amount">約 15,950</div>
+        <div class="unit">NT$（含購物中位數） · 預算 NT$25,000 內 ✓</div>
+      </div>
+    </div>
+    <div class="notice">
+      💆‍♀️ <strong>醫美費用另計：</strong>釜山西面診所依項目不同，一般皮膚護理/雷射類約 NT$3,000–8,000，水光針/肉毒等約 NT$5,000–15,000。出發前在台灣預約，可找有中文服務的診所。即使加上醫美，兩人總預算仍在 NT$50,000（2人）的掌控範圍內。
+    </div>
+  </div>
+
+  <!-- 注意事項 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon">📌</div>
+      <h2 class="section-title">行前必辦清單</h2>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-item">
+        <div class="tip-title">🔴 出發前1個月（4/21起）：膠囊列車預約</div>
+        至官網 <strong>blueline.kr</strong>（選英文版）→ 尾浦站出發 → 5/22的時段 → 建議選14:30–15:30場次。2人套票(膠囊+海岸列車)一組 ₩59,000。每台膠囊最多4人，2人可共購一組。
+      </div>
+      <div class="tip-item">
+        <div class="tip-title">🔴 出發前：Yacht Holic 遊艇預約</div>
+        透過官方 Instagram 私訊、KKday 或 Klook 預訂。<strong>5/23（週六）選19:30場次</strong>可看無人機表演。⚠️ 集合地點在廣安里海洋休閒運動中心，非舊的海雲台地點。
+      </div>
+      <div class="tip-item">
+        <div class="tip-title">🔴 出發前：醫美診所預約</div>
+        建議選擇西面或市區有中文服務的診所（如：DA Clinic、Oracle等）。確認項目、恢復期，避免做完立即搭長途飛機不適的項目。
+      </div>
+      <div class="tip-item">
+        <div class="tip-title">📱 推薦下載 App</div>
+        <strong>Naver Map</strong>（導航、公車查詢比 Google Map 更準確）、<strong>Kakao T</strong>（叫計程車）、<strong>Visit Busan Pass APP</strong>（電子版Pass）、<strong>DeepL / Papago</strong>（即時翻譯）
+      </div>
+      <div class="tip-item">
+        <div class="tip-title">🌤️ 5月釜山天氣</div>
+        平均氣溫 20–26°C，偶有陣雨。建議帶輕薄防曬外套、折疊傘。海岸邊風大，海上遊艇記得多帶一件。膠囊列車無冷氣但可開窗，5月溫度很適合搭乘。
+      </div>
+      <div class="tip-item">
+        <div class="tip-title">💳 韓元換匯建議</div>
+        在台灣大型銀行先換一部分（匯率較好），或使用 <strong>WOWPASS 預付卡</strong>在釜山ATM/機器換匯（手續費低）。釜山現金用量較少，許多地方可刷卡，但小吃攤仍需現金。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  釜山私房行程攻略 · 製作於 2026 · 資訊以最新官方公告為準，出發前請再次確認各景點營業時間及票價。
+</div>
+
+</body>
+</html>
